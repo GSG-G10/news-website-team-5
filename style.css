@@ -4,41 +4,168 @@
     padding: 0px;
   }
   html {
-    font-size: 20px;
-    font-family: sans-serif;
+      font-size: 20px;
+      font-family: Otomanopee One, Arial, Helvetica, sans-serif;
   }
 
   a {
-      color: #868991;
+      color: rgb(134, 137, 145);
       text-decoration:none;
+      transition: all .3s ease;
+      padding: 10px 0px 0px 0px;
+      font-size: 14px;
+      font-weight: 400;
   }
+
+
+  h3.h31 {
+    font-family: "Roboto", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(51, 52, 54);
+   }
+
+ span.span1 {
+     font-family: "Roboto", Sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+    }
+
+span.span2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;;
+    line-height: 1.6;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgb(161, 162, 164);
+       }
+
+h1.h11 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    text-align: inherit;
+    color: rgb(59, 61, 66);
+}
   
   .container {
-    width: 90%;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 2em;
-    display: flex;
-    flex-wrap: wrap;
+      width: 90%;
+      max-width: 100%;
+      margin: 20px auto;
+      padding: 2em;
+      display: flex;
+      flex-wrap: wrap;
   }
 
   .header {
       display: flex;
       flex-direction: column;
-      margin-bottom: 5px;
+      order: -1;
+      font-size: 24px;
+      font-weight: 700;
+      color: rgb(51, 52, 54);
   }
 
   .line {
-    height: .2rem;
-    background-color: #d81c1ced;
-    width: 1200px;
+      height: .2rem;
+      background-color: rgb(216, 28, 28);
+      width: 85vw;
   }
 
   .link {
-    flex-direction: row;
-    margin-top: 10px;
+      flex-direction: row;
+      padding: 10px 0 0px 0;
   }
-  
+
+  .content {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .post-date {
+      padding: 50px 0 0px 30px;
+}
+
+  .title {
+    padding: 5px 0 45px 30px;
+}
+
+.detail-content {
+    padding: 20px 0 0px 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20.25px;
+    line-height: 1.6;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(59, 61, 66);
+}
+
+
+h3.h32 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    color: #3b3d42;
+    margin-bottom: 20px;
+}
+
+span.span3 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(59, 61, 66);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form {
+    border: 1px solid rgb(235, 236, 237);
+    border-radius: 4px;
+}
+
+.author-form {
+    border: 1px solid rgb(235, 236, 237);
+    border-radius: 4px;
+}
+
+.email-form {
+    border: 1px solid rgb(235, 236, 237);
+    border-radius: 4px;
+}
+
+.url-form {
+    border: 1px solid rgb(235, 236, 237);
+    border-radius: 4px;
+}
+
+.check {
+    flex-wrap: wrap;
+}
+
+.submit-form {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(216, 28, 28);
+}
+
   @media (max-width: 1200px) {
     html {
       font-size: 13px;
