@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  html {
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    border: 2px solid #333;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 1200px) {
+    html {
+      font-size: 13px;
+    }
+    
+  }
+  @media (max-width: 900px) {
+    html {
+      font-size: 11px;
+    }
+    
+  }
+  @media (max-width: 600px) {
+    html {
+      font-size: 8px;
+    }
+    
+  }
