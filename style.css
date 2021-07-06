@@ -4,19 +4,39 @@
     padding: 0px;
   }
   html {
-    font-size: 15px;
-    text-align: center;
+    font-size: 20px;
     font-family: sans-serif;
+  }
+
+  a {
+      color: #868991;
+      text-decoration:none;
   }
   
   .container {
-    border: 2px solid #333;
     width: 90%;
     max-width: 100%;
     margin: 20px auto;
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .header {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+  }
+
+  .line {
+    height: .2rem;
+    background-color: #d81c1ced;
+    width: 1200px;
+  }
+
+  .link {
+    flex-direction: row;
+    margin-top: 10px;
   }
   
   @media (max-width: 1200px) {
