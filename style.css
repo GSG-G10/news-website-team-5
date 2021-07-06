@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: Otomanopee One, Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    background-color: rgb(51, 52, 54);
+}
+
+.general {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.general li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 95%;
+    list-style-type: none;
+    border: 1px solid rgb(70, 70, 71);
+    margin-left: 2px;
+}
+
+.general li a {
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+.general li :hover {
+    color: rgb(255, 1, 1);
+    text-decoration-line: underline;
+    transition-duration: .5s;
+}
+
+.search-bar {
+    width: 30%;
+    background-color: transparent;
+    height: 90%;
+    color: rgb(250, 250, 250);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(255, 0, 0);
+    opacity: .6;
+}
