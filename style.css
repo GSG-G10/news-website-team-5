@@ -132,14 +132,33 @@ margin-left: 1%;
 }
 
 
-@media (max-width: 1200px) {
-  
-}
 @media (max-width: 900px) {
-  
+    .conatiner{
+        display: flex;
+       flex-flow: column wrap;
+     width: 100%;
+    align-items: center;
+    justify-content: center;
     
-}
-  
-  @media (max-width: 600px) {
-
-}
+    
+    }
+    .coloumn1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+      
+    }
+    .column2{
+        width: 100%;
+    margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+    .column3{
+        width: 100%;
+    margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+  }
