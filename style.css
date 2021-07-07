@@ -12,6 +12,10 @@
   --secondeBackgroundColor: #d81c1c;
   --Otomanopee: Otomanopee One, Arial, Helvetica, sans-serif;
 }
+body{
+  width: 100%;
+  height: 2000px;
+}
 header {
   top: 0px;
   width: 100%;
@@ -422,71 +426,7 @@ main{
 .main-post .post-details span {
   font-size: 0.5em;
 }
-@media screen and (max-width:780px) {
-  header {
-      /* position: fixed; */
-      top: 0;
-      /* height: 25vh; */
-      /* z-index: 11; */
-  }
-  .navBar {
-      border: 1px solid red;
-      width: 100%;
-  }
-  .navBar .general {
-      width: 100%;
-  }
-  .navBar .general li {
-      display: flex;
-      justify-content: flex-start;
-  }
-  
-  .mainButtons li a {
-  width: 100%;
-  height: 25%;
-}
 
-  .navBar .general li a {
-      font-size: 12px;
-  }
-  .search-bar {
-      display: none;
-  }
-  .siteFace ul {
-      display: none;
-  }
- 
-  .mainBar{
-    display: none;
-  }
-  main{
-    width: 100%;
-  }
-  footer {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: baseline;
-      justify-content: center;
-      width: 100%;
-      max-width: 100%;
-      height: 500px;
-  }
-  .Contacts {
-      display: none;
-  }
-  .main-post .post-title {
-    font-size: 0.75em;
-  }
-}
-@media screen and (max-width: 780px) {
-  .post-container {
-    width: 100%;
-    flex-direction: column;
-  }
-  .col1 .row2 {
-    flex-direction: column;
-  }
-}
 .conatiner{
   display: flex;
   flex-direction: row;
@@ -621,7 +561,7 @@ margin-left: 1%;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   .conatiner{
       display: flex;
      flex-flow: column wrap;
@@ -649,5 +589,67 @@ margin-left: 1%;
   margin-left: 1%;
       display: flex;
       flex-direction: column;
+  }
+}
+@media screen and (max-width:780px) {
+  header {
+      top: 0;
+  }
+  .navBar {
+      border: 1px solid red;
+      width: 100%;
+  }
+  .navBar .general {
+      width: 100%;
+  }
+  .navBar .general li {
+      display: flex;
+      justify-content: flex-start;
+  }
+  
+  .mainButtons li a {
+  width: 100%;
+  height: 25%;
+}
+
+  .navBar .general li a {
+      font-size: 12px;
+  }
+  .search-bar {
+      display: none;
+  }
+  .siteFace ul {
+      display: none;
+  }
+ 
+  .mainBar{
+    display: none;
+  }
+  main{
+    width: 100%;
+  }
+  section{
+    padding: 0;
+  }
+  footer {
+    display: none;
+  }
+  .Contacts {
+      display: none;
+  }
+  .post-title{
+    font-size: 1em;
+  }
+  .main-post .post-title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 780px) {
+  .post-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .col1 .row2 {
+    flex-direction: column;
   }
 }
