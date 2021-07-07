@@ -1,77 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --titleColor:#ffffff;
-    --mainColor: #333;
-    --type-color:#777777;
-    --firstBackgroundColor:#454648;
-    --secondeBackgroundColor:#d81c1c;
-    --Otomanopee: Otomanopee One, Arial, Helvetica, sans-serif;
-
+:root {
+  --titleColor: #ffffff;
+  --mainColor: #333;
+  --type-color: #777777;
+  --firstBackgroundColor: #454648;
+  --secondeBackgroundColor: #d81c1c;
+  --Otomanopee: Otomanopee One, Arial, Helvetica, sans-serif;
 }
-.related-news{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+.related-news {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .post-container {
-    width: 45%;
-    display: flex;
+  padding: 10px;
+  width: 50%;
+  display: flex;
 }
 
 .col1 {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 .col1 .row1 {
-    flex:2;
+  flex: 2;
 }
 
 .col1 .row2 {
-    flex:1;
-    display: flex;
-
+  flex: 1;
+  display: flex;
 }
 
 .col1 .row2 .sub_col1,
 .col1 .row2 .sub_col2 {
-    flex:1;
+  flex: 1;
 }
-
 
 .col2 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .col2 div {
-    flex:1;
+  flex: 1;
 }
 
-.post-box{
-    width: 98%;
-    height: 98%;
-    position: relative;
-  }
-  
-.post-image{
-    width: 100%;
-    height: 100%;
-    
+.post-box {
+  width: 98%;
+  height: 98%;
+  position: relative;
 }
 
- .post-opacity1{
+.post-image {
+  width: 100%;
+  height: 100%;
+}
+
+.post-opacity1 {
   position: absolute;
   content: "";
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     rgba(4, 14, 39, 0) 0%,
     rgba(4, 14, 39, 0.7) 100%
   );
@@ -80,56 +76,72 @@
   z-index: 2;
   width: 100%;
   height: 100%;
-} 
-
-
-.post-title{
-    color: white;
-    position: absolute;
-    bottom: 3em;
-    left: 1em;
-    z-index: 4;
-    width: 100%;
-    font-family: var(--Otomanopee);
-    font-size: 60%;
 }
 
-.post-details{
-    color: var(--titleColor);
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-    z-index: 5;
-    font-size: 0.7em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 25%;
+.post-title {
+  position: absolute;
+  bottom: 3em;
+  left: 1em;
+  z-index: 4;
+  width: 100%;
+  font-family: var(--Otomanopee);
+  font-size: 0.4em;
 }
-.post-details span{
-    font-family: var(--Otomanopee);
-    font-size: 0.5em;
-    font-weight:lighter
+.post-title a{
+  color: white;
+  text-decoration: none;
+}
+.post-details {
+  color: var(--titleColor);
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  z-index: 5;
+  font-size: 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 50%;
+}
+.post-details span {
+  font-family: var(--Otomanopee);
+  font-size: 0.5em;
+  font-weight: lighter;
 }
 .post-box:hover > .post-opacity1 {
-    cursor: pointer;
-    transition: all 0.5 ease-in-out ;
-    background: linear-gradient(to bottom,
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+  background: linear-gradient(
+    to bottom,
     rgba(4, 14, 39, 0) 0%,
     rgba(4, 14, 39, 1) 100%
   );
 }
 .post-title,
 .post-details,
-.post-details span:hover{
-    cursor: pointer;
+.post-details span:hover {
+  cursor: pointer;
 }
-@media screen and (max-width:780px){
-    .post-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    .col1 .row2{
-        flex-direction: column;
-    }
+
+.main-post .post-title {
+  font-size: 0.8em;
+}
+
+.main-post .post-details {
+  width: 30%;
+}
+
+.main-post .post-details span {
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 780px) {
+  .post-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .col1 .row2 {
+    flex-direction: column;
+  }
 }
