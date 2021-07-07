@@ -4,11 +4,11 @@
     padding: 0px;
   }
   html {
-      font-size: 20px;
+      /* font-size: 20px; */
       font-family: Otomanopee One, Arial, Helvetica, sans-serif;
   }
 
-  a {
+  .link a {
       color: rgb(134, 137, 145);
       text-decoration:none;
       transition: all .3s ease;
@@ -19,6 +19,7 @@
 
   .post-date a {
     color: rgb(216, 28, 28);
+    text-decoration:none;
 }
 
   .post-date a:hover {
@@ -60,10 +61,15 @@ h1.h11 {
     text-align: inherit;
     color: rgb(59, 61, 66);
 }
+
+.main {
+    width: 100%;
+    max-width: 100%;
+}
   
   .container {
-      width: 90%;
-      max-width: 100%;
+      width: 80%;
+      max-width: 80%;
       padding: 2em;
       display: flex;
       flex-wrap: wrap;
@@ -95,7 +101,7 @@ h1.h11 {
   }
 
   .post-date {
-      padding: 50px 0 0px 30px;
+      padding: 15px 0 0px 30px;
 }
 
   .title {
@@ -213,9 +219,7 @@ span.span3 {
     text-transform: uppercase;
     text-overflow: ellipsis;
     text-decoration: none;
-    border: none;
     border-radius: 4px;
-    box-shadow: none;
 }
 
 button:hover {
@@ -235,11 +239,108 @@ label {
 }
 
   .content-width{
-      width:80%
+      display: flex;
+      flex-direction: column;
   }
 
-  @media (min-width: 640px) {
+  @media (max-width: 900px) {
     html {
       font-size: 15px;
     }
-}
+
+    .link a {
+        font-size: 10px;
+    }
+
+    h3.h31 {
+        font-size: 20px;
+       }
+    
+     span.span1 {
+         font-size: 10px;
+        }
+    
+    span.span2 {
+        font-size: .5rem;
+           }
+    
+    h1.h11 {
+        font-size: 15px;
+    }
+
+    .header-detail {
+        font-size: 20px;
+    }
+
+    .detail-content {
+        font-size: 15px;
+    }
+
+    h3.h32 {
+        font-size: 15px;
+    }
+
+    span.span3 {
+        font-size: 10px;
+    }
+
+    .submit-form {
+        font-size: 6px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+    
+  }
+
+  @media (max-width: 600px) {
+    html {
+        font-size: 10px;
+      }
+  
+      .link a {
+          font-size: 5px;
+      }
+  
+      h3.h31 {
+          font-size: 15px;
+         }
+      
+       span.span1 {
+           font-size: 5px;
+          }
+      
+      span.span2 {
+          font-size: .1rem;
+             }
+      
+      h1.h11 {
+          font-size: 10px;
+      }
+  
+      .header-detail {
+          font-size: 15px;
+      }
+  
+      .detail-content {
+          font-size: 10px;
+      }
+  
+      h3.h32 {
+          font-size: 10px;
+      }
+  
+      span.span3 {
+          font-size: 5px;
+      }
+  
+      .submit-form {
+          font-size: 3px;
+      }
+  
+      label {
+          font-size: 5px;
+      } 
+    
+ }
