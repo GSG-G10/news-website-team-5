@@ -124,3 +124,12 @@
 .post-details span:hover{
     cursor: pointer;
 }
+@media screen and (max-width:780px){
+    .post-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .col1 .row2{
+        flex-direction: column;
+    }
+}
